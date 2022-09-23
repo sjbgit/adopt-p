@@ -26,7 +26,12 @@ const SearchParam = () => {
 
   return (
     <div className="search-params">
-      <form onSubmit={() => console.log("submit")}>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          requestPets();
+        }}
+      >
         <label htmlFor="location">
           Location {location}
           <input
