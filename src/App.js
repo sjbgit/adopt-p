@@ -1,15 +1,18 @@
 import ReactDOM from "react-dom";
 import SearchParam from "./SearchParam";
+import { StrictMode } from "react";
 //import Pet from "./Pet";
 
 const App = () => {
   return (
-    <div>
-      <h1>Adopt Me!</h1>
-      <SearchParam />
-      {/* <Pet name="Luna" animal="dog" breed="Havanese" />
+    <StrictMode>
+      <div>
+        <h1>Adopt Me!</h1>
+        <SearchParam />
+        {/* <Pet name="Luna" animal="dog" breed="Havanese" />
       <Pet name="Pepper" animal="bird" breed="Cockatiel" /> */}
-    </div>
+      </div>
+    </StrictMode>
   );
 };
 
